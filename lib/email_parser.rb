@@ -4,11 +4,10 @@ class EmailAddressParser
      
    def initialize(email)
         @email = email
-        
     end 
      
     def parse
-       email.split(/, | /).uniq 
+       email.split(/\b/).uniq 
     end
     
 
